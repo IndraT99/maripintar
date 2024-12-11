@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sidebar dan Navbar</title>
+  <style>
+      .hei {
+        background: linear-gradient(#8b24a4, #fd2569, #4884ef);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .hai {
+        background: linear-gradient(#8b24a4, #fd2569, #4884ef);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .hj {
+        background: linear-gradient(#8b24a4, #fd2569, #4884ef);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  </style>
+</head>
+<body class="bg-blue-50 font-sans">
+
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-16 bg-white shadow-md flex flex-col items-center py-4 min-h-screen">
+      <div class="mb-6">
+          <div class="w-10 h-10">
+              <img src="assets/1.png" alt="">
+            </div>
+      </div>
+    <ul class="space-y-6">
+      <!-- Home Icon -->
+
+      <li class="w-10 h-10 bg-blue-100 hover:bg-blue-200 rounded flex items-center justify-center">
+          <a href="dashboard.html">          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7m-9-7v12m-4 4h16m-4-4v-6a4 4 0 00-8 0v6" />
+            </svg></a>
+      </li>
+      <!-- Tasks Icon -->
+      <li class="w-10 h-10 bg-gray-100 hover:bg-blue-200 rounded flex items-center justify-center">
+        <a href="quiz.html">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </a>
+      </li>
+      <!-- Messages Icon -->
+      <li class="w-10 h-10 bg-gray-100 hover:bg-blue-200 rounded flex items-center justify-center">
+          <a href="buat.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V10a2 2 0 012-2h2m8 0V6a4 4 0 00-8 0v2m8 0H9" />
+                </svg>
+          </a>
+      </li>
+      <!-- Settings Icon -->
+      <li class="w-10 h-10 bg-gray-100 hover:bg-blue-200 rounded flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.333 0-3 1-4 2.667C7 11 7 12 7 12s0 1 .333 1.333C9 14 10.667 15 12 15s3-1 4-2.667c.333-.333.333-1.333.333-1.333S16.333 11 16 10.667C15 9 13.333 8 12 8z" />
+        </svg>
+      </li>
+      <!-- Logout Icon -->
+      <li class="w-10 h-10 bg-gray-100 hover:bg-blue-200 rounded flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 11-4 0v-1m4-10v1a2 2 0 11-4 0V6" />
+        </svg>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+      <h1 class="text-lg font-semibold text-gray-700">Buat Quiz</h1>
+      <div class="flex items-center space-x-4">
+        <div class="w-10 h-10 bg-yellow-300 rounded-full"></div>
+        <span class="text-gray-700 font-medium">Siapa nama saya</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </nav>
+
+      <!-- Main Content -->
+      <main class="p-6">
+        <div class="bg-white rounded-lg shadow-md p-6 space-y-3">
+          <h2 class="text-xl font-bold text-black">Mulai membuat Soal dengan <span class="hai text-xl font-bold">Quizz AI</span></h2> 
+          <div class="bg-black rounded-md">
+            <h2 class="hei text-xl font-bold bg-black p-2 rounded-md text-center">Masukan Teks</h2>
+          </div>
+          <div class="border-2 border-black rounded-md">
+            
+            <div class="p-2">
+              <h5 class="py-2 font-semibold text-[16px]">Masukan Topik untuk quizz atau tempelkan konten untuk dihasilkan oleh AI</h5>
+              <input type="text" class="border-2 w-full rounded-md p-2" placeholder="Masukkan Topik atau Tempel Konten . . . .">
+              <div class="pt-2">
+                <button class="w-full border-2 rounded-md p-2">Preferensi soal</button>
+                <div class="w-full border-x-2 border-b-2 -mt-1 p-3 flex justify-between">jumlah pertanyaan
+                  <div class="hj">
+                    <button type="button" class="border-2 rounded-xl px-2">otomatis</button>
+                    <button type="button" class="border-2 rounded-xl px-3">5</button>
+                    <button type="button" class="border-2 rounded-xl px-2">10</button>
+                    <button type="button" class="border-2 rounded-xl px-2">15</button>
+                  </div>
+                </div>
+                <div class="w-full border-x-2 border-b-2 -mt-1 rounded-b-md p-3 flex justify-between">jumlah pertanyaan
+                  <div class="">
+                    <select name="" id="" class="border-2 rounded-md px-2" placeholder="lainnya">
+                      <option value="" class="">Lainnya</option>
+                    </select>
+                    <select name="" id="" class="border-2 rounded-md px-2" placeholder="lainnya">
+                      <option value="" class="">Kelas</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="justify-end flex pt-10">
+                <a href="quiz.html">
+                  <button class="bg-[#8B24A4] p-2 rounded-lg text-md font-semibold text-white">CONTINUE</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 mt-2">Isi konten utama di sini.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>

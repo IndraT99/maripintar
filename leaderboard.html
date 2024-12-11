@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body class="bg-blue-100 font-sans">
+    <header class="bg-[#d3f3ff] shadow-md">
+        <div class="container mx-auto flex items-center py-4 px-6">
+          <nav class="flex-1 flex justify-center items-center space-x-6">
+            <img alt="eduAI logo" class="mt-2" src="assets/1.png" style="height: 60px; width: 60px" />
+            <a class="text-gray-700 hover:text-blue-600 font-semibold mt-2" href="#">Sistem Terintegrasi</a>
+            <a class="text-gray-700 hover:text-blue-600 font-semibold mt-2" href="#">Pembelajaran Cerdas</a>
+            <a class="text-gray-700 hover:text-blue-600 font-semibold mt-2" href="#">Keunggulan</a>
+            <a class="text-gray-700 hover:text-blue-600 font-semibold mt-2" href="#">Solusi AI</a>
+            <a href="login.html">
+              <button class="border border-blue-600 px-10 py-2 rounded-full hover:bg-white  hover:text-black">Login</button>
+            </a>
+            <a href="login.html">
+              <button class="border border-blue-600 px-8 py-2 rounded-full hover:bg-white  hover:text-black">Sign Up</button>
+            </a>
+          </nav>
+        </div>
+      </header>
+    <div class="max-w-6xl mx-auto py-8">
+        <!-- Header -->
+
+        <!-- Top Ranking Section -->
+        <div class="bg-blue-200 p-8 rounded-lg shadow-md">
+            <div class="flex justify-center items-center space-x-8 mb-6">
+                <!-- 2nd Place -->
+                <div class="text-center">
+                    <div class="relative w-24 h-24 rounded-full overflow-hidden border-4 border-purple-500">
+                        <img src="https://via.placeholder.com/96" alt="Wardana">
+                    </div>
+                    <p class="mt-2 text-lg font-semibold text-gray-700">Wardana</p>
+                    <p class="text-purple-500 font-bold">1000 point</p>
+                </div>
+
+                <!-- 1st Place -->
+                <div class="text-center">
+                    <div class="relative w-28 h-28 rounded-full overflow-hidden border-4 border-orange-500">
+                        <img src="https://via.placeholder.com/112" alt="Girindra">
+                        <span class="absolute -top-2 -right-2 bg-yellow-300 text-yellow-800 text-xs px-2 py-1 rounded-full font-bold">&#x1F451;</span>
+                    </div>
+                    <p class="mt-2 text-lg font-semibold text-gray-700">Girindra</p>
+                    <p class="text-orange-500 font-bold">1200 point</p>
+                </div>
+
+                <!-- 3rd Place -->
+                <div class="text-center">
+                    <div class="relative w-24 h-24 rounded-full overflow-hidden border-4 border-pink-500">
+                        <img src="https://via.placeholder.com/96" alt="Brahma">
+                    </div>
+                    <p class="mt-2 text-lg font-semibold text-gray-700">Brahma</p>
+                    <p class="text-pink-500 font-bold">800 point</p>
+                </div>
+            </div>
+
+            <!-- Podium -->
+            <div class="flex justify-center items-end space-x-4">
+                <div class="w-24 h-16 bg-purple-500 text-white text-center rounded-t-lg shadow-md">
+                    <p class="text-sm">2</p>
+                </div>
+                <div class="w-24 h-20 bg-orange-500 text-white text-center rounded-t-lg shadow-md">
+                    <p class="text-sm">1</p>
+                </div>
+                <div class="w-24 h-12 bg-pink-500 text-white text-center rounded-t-lg shadow-md">
+                    <p class="text-sm">3</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Class Ranking Section -->
+        <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Peringkat Kelas</h2>
+            <div class="space-y-4">
+                <!-- Repeatable Item -->
+                <div class="flex items-center bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-blue-500">
+                        <img src="https://via.placeholder.com/48" alt="Girindra">
+                    </div>
+                    <div class="ml-4 flex-1">
+                        <p class="text-gray-700 font-semibold">Girindra</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-orange-500 font-bold">1200 point</p>
+                        <p class="text-gray-500 text-sm">Lv. Gold</p>
+                    </div>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

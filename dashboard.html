@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Dashboard</title>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body class="bg-blue-50 font-sans">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-16 bg-white shadow-md flex flex-col items-center py-4 min-h-screen">
+        <div class="mb-6">
+            <div class="w-15 h-15">
+              <img src="assets/1.png" alt="">
+            </div>
+        </div>
+      <ul class="space-y-6">
+        <!-- Home Icon -->
+        <li class="w-10 h-10 bg-blue-100 hover:bg-blue-200 rounded flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7m-9-7v12m-4 4h16m-4-4v-6a4 4 0 00-8 0v6" />
+          </svg>
+        </li>
+        <!-- Profile Icon -->
+        <!-- Tasks Icon -->
+        <li class="w-10 h-10 bg-gray-100 hover:bg-blue-200 rounded flex items-center justify-center">
+          <a href="quiz.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 22h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3zM5 8V5c0-.805.55-.988 1-1h13v12H5V8z"></path><path d="M8 6h9v2H8z"></path></svg>
+          </a>
+        </li>
+        <!-- Messages Icon -->
+        <li class="w-10 h-10 bg-gray-100 hover:bg-blue-200 rounded flex items-center justify-center">
+          <a href="buat.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M3.299 17.596c.432 1.332 1.745 2.182 3.146 2.182H6.5A2.78 2.78 0 0 0 9.223 22c.457 0 .884-.115 1.262-.313a.992.992 0 0 0 .515-.882V3.027a.997.997 0 0 0-.785-.983 2.324 2.324 0 0 0-1.479.201c-.744.356-1.18 1.151-1.18 1.978v.055a2.778 2.778 0 0 0-2.744 4.433A3.327 3.327 0 0 0 2 12c0 1.178.611 2.211 1.533 2.812-.43.771-.571 1.746-.234 2.784zm15.889-8.885a2.778 2.778 0 0 0-2.744-4.433v-.055c0-.826-.437-1.622-1.181-1.978a2.32 2.32 0 0 0-1.478-.201.998.998 0 0 0-.785.983v17.777c0 .365.192.712.516.882.378.199.804.314 1.261.314a2.78 2.78 0 0 0 2.723-2.223h.056c1.4 0 2.714-.85 3.146-2.182.337-1.038.196-2.013-.234-2.784A3.35 3.35 0 0 0 22 12a3.327 3.327 0 0 0-2.812-3.289z"></path></svg>
+          </a>
+      </li>
+        <!-- Settings Icon -->
+        <li class="w-10 h-10 bg-gray-100 hover:bg-blue-200 rounded flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.333 0-3 1-4 2.667C7 11 7 12 7 12s0 1 .333 1.333C9 14 10.667 15 12 15s3-1 4-2.667c.333-.333.333-1.333.333-1.333S16.333 11 16 10.667C15 9 13.333 8 12 8z" />
+          </svg>
+        </li>
+        <!-- Logout Icon -->
+        <li class="w-10 h-10 bg-gray-100 hover:bg-blue-200 rounded flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 11-4 0v-1m4-10v1a2 2 0 11-4 0V6" />
+          </svg>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+      <!-- Navbar -->
+      <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-lg font-semibold text-gray-700">Dashboard</h1>
+        <div class="flex items-center space-x-4">
+          <div class="w-10 h-10 bg-yellow-300 rounded-full"></div>
+          <span class="text-gray-700 font-medium">Siapa nama saya</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </nav>
+
+      <!-- Dashboard Content -->
+      <main class="p-6 space-y-6">
+        <!-- Top Section -->
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Profile -->
+          <div class="bg-white p-4 rounded-lg shadow-md text-center">
+            <div class="w-32 h-32 mx-auto bg-gray-300 rounded-full mb-4"></div>
+            <h2 class="text-lg font-semibold">Girindra Wardana Brahma Sengon Nalendra</h2>
+            <div class="flex justify-center space-x-4 mt-2">
+              <span class="text-sm bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full">1200 poin</span>
+              <span class="text-sm bg-red-100 text-red-600 px-3 py-1 rounded-full">Lv. Gold</span>
+            </div>
+          </div>
+
+          <!-- Radar Chart -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <h3 class="text-center font-semibold mb-2">Performa</h3>
+            <div class="flex justify-center">
+              <img src="assets/ai6.png" alt="Performa" class="w-50 h-50 object-cover rounded-lg">
+            </div>
+          </div>          
+
+          <!-- Badge Section -->
+          <div class="bg-white p-4 rounded-lg shadow-md text-center">
+            <div class="">
+              <img src="assets/ai7.png" alt="Gold Image" class="w-full h-full object-cover rounded-lg">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section (Updated) -->
+        <div class="grid grid-cols-2 gap-6">
+          <!-- Completed Tasks -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <h3 class="font-semibold mb-4">Tugas Selesai</h3>
+            <ul class="divide-y divide-gray-200">
+              <!-- List Item 1 -->
+              <li class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 rounded-lg">
+                    <img src="assets/ai19.png" alt="">
+                  </div>
+                  <div>
+                    <h4 class="font-medium">Ilmu Pengetahuan Alam</h4>
+                    <p class="text-sm text-gray-500">20 soal</p>
+                  </div>
+                </div>
+                <span class="text-green-500 font-semibold">90%</span>
+              </li>
+
+              <!-- List Item 2 -->
+              <li class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 rounded-lg">
+                    <img src="assets/ai19.png" alt="">
+                  </div>
+                  <div>
+                    <h4 class="font-medium">Ilmu Pengetahuan Sosial</h4>
+                    <p class="text-sm text-gray-500">15 soal</p>
+                  </div>
+                </div>
+                <span class="text-green-500 font-semibold">85%</span>
+              </li>
+
+              <!-- List Item 3 -->
+              <li class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 rounded-lg">
+                    <img src="assets/ai19.png" alt="">
+                  </div>
+                  <div>
+                    <h4 class="font-medium">Matematika</h4>
+                    <p class="text-sm text-gray-500">25 soal</p>
+                  </div>
+                </div>
+                <span class="text-green-500 font-semibold">92%</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Achievements -->
+          <div class="bg-white p-4 rounded-lg shadow-md">
+            <h3 class="font-semibold mb-4">Pencapaian</h3>
+            <div class="flex space-x-6">
+              <!-- Item 1 -->
+              <div class="flex flex-col items-center">
+                <img src="path/to/your/image1.jpg" alt="Legenda Hidup" class="w-12 h-12 rounded-full">
+                <h4 class="font-medium text-center mt-2">Legenda Hidup</h4>
+                <p class="text-sm text-gray-500 text-center">"Seseorang yang selalu di atas!"</p>
+              </div>
+              <!-- Item 2 -->
+              <div class="flex flex-col items-center">
+                <img src="path/to/your/image2.jpg" alt="Pemimpin Hebat" class="w-12 h-12 rounded-full">
+                <h4 class="font-medium text-center mt-2">Pemimpin Hebat</h4>
+                <p class="text-sm text-gray-500 text-center">"Menginspirasi banyak orang."</p>
+              </div>
+              <!-- Item 3 -->
+              <div class="flex flex-col items-center">
+                <img src="path/to/your/image3.jpg" alt="Juara Bertahan" class="w-12 h-12 rounded-full">
+                <h4 class="font-medium text-center mt-2">Juara Bertahan</h4>
+                <p class="text-sm text-gray-500 text-center">"Tidak pernah menyerah."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

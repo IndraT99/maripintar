@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Answers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        body.bg-gradient {
+            background: linear-gradient(#76e6ff, #4884ef, #1a23de);
+            min-height: 50px;
+            margin: 0;
+        }
+
+        .min-h-screens {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-gradient min-h-screen flex flex-col">
+    <div class="min-h-screens flex items-center justify-center">
+        <h1 class="text-2xl font-bold mb-6 text-center text-white mt-4">
+            Review Answers
+        </h1>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-6 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Profile Section -->
+            <div class="col-span-1 md:col-span-2">
+                <div class="bg-gray-100 rounded-lg p-4 flex items-center mb-4">
+                    <img 
+                        src="https://storage.googleapis.com/a1aa/image/pUHRl4OyXezcAaSqxpaHzGH4g98eaSfwX8uGBe2c8MIWSymPB.jpg" 
+                        alt="Profile picture" 
+                        class="rounded-full w-12 h-12 mr-4" 
+                        width="50" 
+                        height="50"
+                    />
+                    <div>
+                        <p class="font-bold">Nama saya ini</p>
+                        <p class="text-red-500">
+                            <i class="fas fa-gem"></i>
+                            1200 point
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-4 flex items-center">
+                    <img 
+                        src="https://storage.googleapis.com/a1aa/image/uMj7uXqvxP6CE5xcV4zfZ0vRH2T3Enwp4GhgcfgYOkdkks5TA.jpg" 
+                        alt="Course image" 
+                        class="rounded-lg w-12 h-12 mr-4" 
+                        width="50" 
+                        height="50"
+                    />
+                    <div>
+                        <p class="font-bold">Materinya apaan hini nxncmnscm cnsmcmdc</p>
+                        <p class="text-gray-500">
+                            <i class="fas fa-calendar-alt"></i>
+                            12 / 03 / 2025 | 09:00 AM
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Score Section -->
+            <div class="col-span-1 flex flex-col items-center">
+                <div class="relative w-32 h-32 mb-4">
+                    <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 36 36">
+                        <path 
+                            class="text-gray-300" 
+                            d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" 
+                            fill="none"     
+                            stroke="currentColor" 
+                            stroke-width="2">
+                        </path>
+                        <path 
+                            class="text-pink-500" 
+                            d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-dasharray="50, 100" 
+                            stroke-width="2">
+                        </path>
+                    </svg>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="text-xl font-bold">
+                            Nilai<br />
+                            50%
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-100 rounded-lg p-4 mb-2 w-full text-center">
+                        <p class="font-bold">Peringkat</p>
+                        <p class="text-pink-500">1 / 36</p>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-4 w-full text-center">
+                        <p class="font-bold">Performa</p>
+                        <p class="text-pink-500">7500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="mt-6">
+            <h2 class="text-center font-bold mb-4">STATISTIK PERFORMA</h2>
+
+            <div class="flex justify-center space-x-4 mb-6">
+                <div class="bg-blue-500 text-white rounded-lg p-4 flex items-center space-x-2">
+                    <i class="fas fa-check-circle text-2xl"></i>
+                    <div>
+                        <p class="text-xl font-bold">10</p>
+                        <p>benar</p>
+                    </div>
+                </div>
+                <div class="bg-blue-500 text-white rounded-lg p-4 flex items-center space-x-2">
+                    <i class="fas fa-times-circle text-2xl"></i>
+                    <div>
+                        <p class="text-xl font-bold">0</p>
+                        <p>salah</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <button class="bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold py-3 px-8 rounded-full">
+                    MULAI ULANG
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
